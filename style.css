@@ -59,10 +59,8 @@ video {
     height: 90vh;
     overflow: hidden;
     margin: 0;
-    background: rgb(148,187,233);
-    /* background: linear-gradient(0deg, rgba(148,187,233,1) 0%, rgba(255,255,255,1) 100%); */
-    background: radial-gradient(circle, rgba(148,187,233,1) 0%, rgba(255,255,255,1) 100%);
-    border-radius: 9px;
+    background: rgb(30,163,251);
+    background: linear-gradient(0deg, rgba(30,163,251,0.6233480176211454) 0%, rgba(255,255,255,1) 100%);
 }
 
 .container{
