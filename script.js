@@ -1,16 +1,14 @@
-const panels = document.querySelectorAll('.panel')
+$(document).ready(function () {
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
 
-panels.forEach((panel) => {
-    panel.addEventListener('mouseover', () => {
-        changeClass()
-        panel.classList.add('active');
+        var target = this.hash;
+        var $target = $(target);
 
-    })
-
-})
-
-function changeClass() {
-    panels.forEach(panel => {
-        panel.classList.replace('active', 'changephoto')
-    })
-}
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+});
