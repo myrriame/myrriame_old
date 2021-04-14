@@ -40,21 +40,21 @@ video {
     width: 100%;
     height: 100%;
     -o-object-fit: fill;
-       object-fit: fill;
+    object-fit: fill;
     -o-object-position: center;
-       object-position: center;
-       margin: 0 auto;
+    object-position: center;
+    margin: 0 auto;
   }
 
   .overlay {
     transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.63);
     position: absolute;
     mix-blend-mode: overlay;
     padding: 180px 0px;
     text-align: center;
-    top: 70%;
-  left: 50%;
+    top: 75%;
+    left: 50%;
 }
 
 #portfolio-projects{
@@ -80,11 +80,11 @@ video {
 
 
 body, html {
-   font-family: 'Roboto Slab', serif;
-    margin: 0 auto;
+  font-family: 'Roboto Slab', serif;
+  margin: 0 auto;
   /* width: 100%;
 height: 100%; */
-    padding: 0;
+  padding: 0;
 }
 
 body {
@@ -134,6 +134,9 @@ body {
     background-image: url('attachments/tictactoe.gif');
 }
 
+.card--5 .card__img, .card--5 .card__img--hover {
+  background-image: url('attachments/horoscope-sim.gif');
+}
 
 
 .app_info {
@@ -178,8 +181,8 @@ top: 0;
   margin-right: 90px;
   transition: all .4s cubic-bezier(0.175, 0.885, .8, 1);
   background-color: #fff;
-    width: 44.4%;
-    height: 80%;
+  width: 44.4%;
+  height: 80%;
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -187,58 +190,58 @@ top: 0;
 }
 .card:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
-    transform: scale(1.10, 1.10);
+  transform: scale(1.10, 1.10);
 }
 
 .card__info {
 z-index: 2;
   background-color: #fff;
   border-bottom-left-radius: 12px;
-border-bottom-right-radius: 12px;
-   padding: 14px 24px 24px 24px;
+  border-bottom-right-radius: 12px;
+  padding: 14px 24px 24px 24px;
 }
 
 .app_name {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
   color: #868686;
 }
 
 .card_description {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-family: 'Roboto Slab', serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: 'Roboto Slab', serif;
 }
 
 
 .repository {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    color: #3695e4;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #3695e4;
 }
 
 .card:hover .card__img--hover {
-    /* height: 100%; */
-    opacity: 0.1;
+  /* height: 100%; */
+  opacity: 0.1;
 }
 
 .card:hover .card__info {
-    background-color: transparent;
-    /* position: relative; */
+  background-color: transparent;
+  /* position: relative; */
 }
 
 .card:hover .card__info-hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .language{
-    border: solid #474646 1px;
-    font-size: small;
-    border-radius: 2px;
+  border: solid #474646 1px;
+  font-size: small;
+  border-radius: 2px;
   background-color: #aaa8a8;
   color: white;
 }
@@ -261,12 +264,13 @@ border-bottom-right-radius: 12px;
 }
 
 #aboutMe{
-  background-image: url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
- 
+  background-image: url('attachments/contact.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .about{
-  width: 900px;
-  height: 450px;
+  width: 700px;
+  height: 400px;
   background:#fff;
   /* margin: 0 auto; */
   box-shadow: 15px 20px 25px 1px rgba(34, 32, 31, 0.2);
@@ -302,13 +306,13 @@ border-bottom-right-radius: 12px;
 
 .navigation ul
 {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 
 .navigation ul li
 {
-    list-style-type: none;
-    display: inline;
+  list-style-type: none;
+  display: inline;
 }
 
 .navigation li:before {
@@ -317,23 +321,23 @@ border-bottom-right-radius: 12px;
 }
 
 .navigation li:first-child:before {
-content: none;
+  content: none;
 }
 
 .navigation li a:hover {
   color: #CCCCCC;
   font-weight: 600;
 }
-/* contact */
 
-p{
-  color: rgb(255, 255, 255); 
+
+h1{
+  /* color: rgb(255, 255, 255);  */
   font-size: 100px;
   margin: 10px 0 0 10px;
   white-space: nowrap;
   overflow: hidden;
   width: 30em;
-  animation: type 7s steps(60, end); 
+  animation: type 10s steps(44, end); 
 }
 
 span.blink{
@@ -349,3 +353,19 @@ span.blink{
   to{opacity: .0;}
 }
 
+#contactMe{
+
+  background-image: url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact{
+  width: 300px;
+  height: 450px;
+  background:#fff;
+  /* margin: 0 auto; */
+  box-shadow: 15px 20px 25px 1px rgba(34, 32, 31, 0.2);
+  padding: 2% 2% 2% 2%;
+  border-radius: 8px;
+}
