@@ -12,3 +12,28 @@ $(document).ready(function () {
         });
     });
 });
+
+$(document).ready(function () {
+    $('.contactinfo').click(function (e) {
+        $('.contactcard').toggleClass('active');
+        $('.banner').toggleClass('active');
+        $('.photo').toggleClass('active');
+        $('.social-media-banner').toggleClass('active');
+        $('.download-form').toggleClass('active');
+        var buttonText = $('button.contactinfo#main-button').text();
+
+        if (buttonText === 'back') {
+            buttonText = 'Click Here For My Resume';
+            $('button.contactinfo#main-button').text(buttonText);
+        }
+
+        else {
+            buttonText = 'back';
+            $('button.contactinfo#main-button').text(buttonText);
+        }
+    }
+
+    );
+}
+
+);
