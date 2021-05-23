@@ -2,13 +2,13 @@ $(document).ready(function () {
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
 
-        var target = this.hash;
-        var $target = $(target);
+        var target=this.hash;
+        var $target=$(target);
 
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top
         }, 900, 'swing', function () {
-            window.location.hash = target;
+            window.location.hash=target;
         });
     });
 });
@@ -20,15 +20,14 @@ $(document).ready(function () {
         $('.photo').toggleClass('active');
         $('.social-media-banner').toggleClass('active');
         $('.download-form').toggleClass('active');
-        var buttonText = $('button.contactinfo#main-button').text();
+        var buttonText=$('button.contactinfo#main-button').text();
 
-        if (buttonText === 'back') {
-            buttonText = 'Click Here For My Resume';
+        if (buttonText==='back') {
+            buttonText='Click Here For Skills & My Resume';
             $('button.contactinfo#main-button').text(buttonText);
         }
-
         else {
-            buttonText = 'back';
+            buttonText='back';
             $('button.contactinfo#main-button').text(buttonText);
         }
     }
