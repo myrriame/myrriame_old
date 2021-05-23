@@ -170,6 +170,7 @@ body{
 .back span {
   vertical-align: middle;
   text-align: center;
+  font-size: smaller;
   
 }
 
@@ -219,10 +220,6 @@ body{
   height: 100%;
 }
 
-
-#aboutmespan{ 
-  font-size: smaller;
-}
 
 span.blink{
   animation: blink 1s infinite;
