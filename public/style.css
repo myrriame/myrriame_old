@@ -170,7 +170,7 @@ body{
 .back span {
   vertical-align: middle;
   text-align: center;
-  font-size: smaller;
+  font-size: 80%;
   
 }
 
@@ -203,11 +203,12 @@ body{
 
 
 .language {
-  border: solid #1803297e 1px;
+  border: solid #2808427e 1px;
   font-size: small;
   border-radius: 2px;
   background-color: #51137ad8;
   color: #ffffffcb;
+  
 }
 /* project cards */
 
@@ -449,8 +450,8 @@ button.info:focus {
 }
 
 #pdf {
-  height: 35px;
-  width: 35px;
+  height: 39px;
+  width: 39px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -497,4 +498,19 @@ button.info:focus {
 
 #footer a {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .navigation {
+    align-content: center;
+    height: 50px;
+    
+  }
+
+  .navigation ul li a{
+    font-size: 7px;
+    float: none;
+    
+  }
 }
