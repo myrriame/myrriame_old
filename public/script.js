@@ -23,7 +23,7 @@ $(document).ready(function () {
         var buttonText=$('button.contactinfo#main-button').text();
 
         if (buttonText==='back') {
-            buttonText='Click Here For Skills & My Resume';
+            buttonText='Click To View Skills & My Resume';
             $('button.contactinfo#main-button').text(buttonText);
         }
         else {
