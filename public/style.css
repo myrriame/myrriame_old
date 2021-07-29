@@ -152,6 +152,7 @@ body{
   transition: .4s;
   transform: translateY(100%);
   text-align: center;
+  
 }
 
 .card .front .title-front-card {
@@ -171,12 +172,18 @@ body{
   vertical-align: middle;
   text-align: center;
   font-size: 80%;
-  
+  padding: 4px;
 }
 
 .back span ul {
   padding-left: 0;
-  overflow: scroll;;
+  overflow: scroll;
+  padding: 5px;
+}
+
+.back span p {
+  
+  padding: 10px;
 }
 
 .back span ul li {
