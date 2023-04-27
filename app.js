@@ -6,9 +6,9 @@ app.use(express.static("public"))
 
 
 app.get("/", function (req, res) {
-    res.render("index")
+    res.sendFile('index.html', { root: __dirname })
 })
 
 
-app.listen(process.env.PORT||3000,
+app.listen(process.env.PORT||8000,
     () => console.log("Server is running..."));

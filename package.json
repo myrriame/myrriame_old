@@ -24,7 +24,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-es6-template-engine": "^2.2.3",
-    "heroku": "^7.54.0",
     "html": "^1.0.0",
     "path": "^0.12.7"
   }
